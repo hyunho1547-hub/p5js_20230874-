@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js 작품 모음</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+            justify-items: center;
+            padding: 20px;
+        }
+
+        .project {
+            text-align: center;
+        }
+
+        .project iframe {
+            border: 1px solid #ccc; 
+            border-radius: 8px;     
+            margin-top: 10px;
+            background-color: #f9f9f9;
+        }
+
+        @media (max-width: 1300px) {
+            .grid-container {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="text-align: center; margin-bottom: 30px;">
+        <h1>나의 p5.js 작품</h1>
+        <p>정적 → 동적 순으로 배치된 2행 2열 갤러리입니다.</p>
+    </header>
+
+    <section id="projects" class="grid-container">
+    
+        <div class="project">
+            <h3>과제 1. 추상화(정적)</h3>
+            <iframe src="1. 추상화/index.html" width="600" height="400" scrolling="no"></iframe>
+        </div>
+    
+        <div class="project">
+            <h3>과제 4.추상화 움직임(동적)</h3>
+            <iframe src="4. 추상화 움직임/index.html" width="600" height="400" scrolling="no"></iframe>
+        </div>
+
+        <div class="project">
+            <h3>과제 2.캐릭터(정적)</h3>
+            <iframe src="2. 캐릭터/index.html" width="400" height="600" scrolling="no"></iframe>
+        </div>
+
+        <div class="project">
+            <h3>과제 3.캐릭터 움직임(동적)</h3>
+            <iframe src="3. 캐릭터 움직임/index.html" width="400" height="600" scrolling="no"></iframe>
+        </div>
+
+    </section>
+</body>
+</html>
